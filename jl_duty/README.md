@@ -2,6 +2,7 @@
 ## Dependencies
 - [``es_extended``](https://github.com/esx-framework/esx-legacy/)
 - [``ox_target``](https://github.com/overextended/ox_target)
+## Config Example
 ```lua
 Config.Jobs = {
     Ambulance = {
