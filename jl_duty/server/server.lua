@@ -1,3 +1,5 @@
+DiscordWebhook = ''
+
 ESX.RegisterServerCallback('jl_duty:ToggleClock', function(src, cb, jobName, clockIn)
     local jobTable = Config.Jobs[jobName]
     if jobTable == nil then return cb(false) end
@@ -49,5 +51,5 @@ function sendToDiscord(color, name, message, footer)
             },
         }
     }
-    PerformHttpRequest(Config.DiscordLogs.DiscordWebhook, function(err, text, headers) end, 'POST', json.encode({username = 'Duty-Log', embeds = embed}), { ['Content-Type'] = 'application/json' })
+    PerformHttpRequest(DiscordWebhook, function(err, text, headers) end, 'POST', json.encode({username = 'Duty-Log', embeds = embed}), { ['Content-Type'] = 'application/json' })
 end
