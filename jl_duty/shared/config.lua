@@ -4,8 +4,7 @@ Config.Radius = 1
 Config.Icon = 'fa-solid fa-business-time'
 Config.Label = 'On/Off Duty'
 Config.DiscordLogs = {
-        enabled = true,
-        DiscordWebhook = ''
+        enabled = true
 }
 
 Config.Lang = {
