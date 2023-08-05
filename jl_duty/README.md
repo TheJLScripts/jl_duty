@@ -24,6 +24,7 @@ Config.Jobs = {
 }
 ```
 ## SQL Example
+```sql
 INSERT INTO `jobs` (`name`, `label`, `whitelisted`) VALUES
     ('offlspd', 'Off-Duty lspd', 1);
 
