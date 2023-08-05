@@ -1,4 +1,4 @@
-DiscordWebhook = ''
+local DiscordWebhook = ''
 
 ESX.RegisterServerCallback('jl_duty:ToggleClock', function(src, cb, jobName, clockIn)
     local jobTable = Config.Jobs[jobName]
